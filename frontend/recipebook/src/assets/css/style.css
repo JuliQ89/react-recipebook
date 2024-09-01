@@ -1,0 +1,115 @@
+/* Fonts Family */
+@font-face {
+    font-family: 'BrandonGrotesqueRegular';
+    src: url(../fonts/brandon-grotesque/HvDTrial_Brandon_Grotesque_regular-BF64a625c9311e1.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesqueMedium';
+    src: url(../fonts/brandon-grotesque/HvDTrial_Brandon_Grotesque_medium-BF64a625c84a521.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrandonGrotesqueBold';
+    src: url(../fonts/brandon-grotesque/HvDTrial_Brandon_Grotesque_bold-BF64a625c9151d5.otf);
+    font-style: normal;
+}
+
+/* Allgemein */
+html {
+    font-family:sans-serif;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: var(--lightGrey);
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    color:#333;
+    text-align:left;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--BrandonGrotesqueRegular) !important;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+h1,h2,h3 {
+    margin-top:0;
+    margin-bottom:.5rem;
+}
+
+h1, h2 {
+    font-family: var(--BrandonGrotesqueBold);
+}
+
+h3 {
+    font-family: var(--BrandonGrotesqueMedium);
+}
+
+img {
+    user-select: none;
+    pointer-events: none;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+/* Variablen */
+:root {
+    --white: #fff;
+    --black: #000;
+    --lightGrey: #f3f3f3;
+    --darkGrey: #28292e;
+
+    --primaryColor: #36a628;
+    --primaryColorDarker: #2c8b1f;
+
+    /* --fontFamily: brandon-grotesque, sans-serif; */
+    --BrandonGrotesqueRegular: 'BrandonGrotesqueRegular';
+    --BrandonGrotesqueMedium: 'BrandonGrotesqueMedium';
+    --BrandonGrotesqueBold: 'BrandonGrotesqueBold';
+}
+
+/* Primary Color Class überschreiben */
+.btn-primary:hover,
+.btn-check:checked+.btn, .btn.active, 
+.btn-primary.show, 
+.btn-primary:first-child:active, 
+:not(.btn-check)+.btn:active {
+    background-color: var(--primaryColorDarker);
+    border-color: var(--primaryColorDarker);
+}
+
+.btn-primary {
+    background-color: var(--primaryColor); /* Neue Primärfarbe */
+    border-color: var(--primaryColor);
+}
+  
+.bg-primary {
+    background-color: var(--primaryColor) !important;
+}
+
+.text-bg-primary {
+    background-color: var(--primaryColor) !important;
+}
+  
+.text-primary {
+    color: var(--primaryColor) !important;
+}
+
+section {
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0 1.5rem;
+}
