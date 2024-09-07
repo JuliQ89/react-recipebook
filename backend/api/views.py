@@ -34,7 +34,7 @@ class KategoryView(viewsets.ModelViewSet):
     serializer_class = KategorySerializer
     
     def list(self, request):
-        serializer = self.serializer_class(self.queryset, many=True)
+        serializer = self.serializer_class(Kategory.objects.all(), many=True)
         return Response(serializer.data)
     
     def create(self, request):
@@ -69,7 +69,7 @@ class DishView(viewsets.ModelViewSet):
     serializer_class = DishSerializer
     
     def list(self, request):
-        serializer = self.serializer_class(self.queryset, many=True)
+        serializer = self.serializer_class(Dish.objects.all(), many=True)
         return Response(serializer.data)
     
     def create(self, request):

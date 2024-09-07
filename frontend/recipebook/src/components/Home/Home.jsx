@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from "../Header";
 import HeaderMain from "../HeaderMain";
 import KategorieList from '../Kategory/KategorieList';
-import SearchBar from "../Inputs/SearchBar";
+import SearchBar from "../generallyComponents/Inputs/SearchBar";
 import Footer from "../Footer";
 import axios from 'axios';
 

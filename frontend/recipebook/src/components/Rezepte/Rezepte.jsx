@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Card from '../Card';
+import Card from './Card';
 import Loader from '../Loader';
-import SearchBar from '../Inputs/SearchBar';
+import SearchBar from "../generallyComponents/Inputs/SearchBar";
 import Header from '../Header';
 import axios from 'axios';
 
